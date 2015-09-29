@@ -323,6 +323,7 @@ public class ChatActivity extends SwipeBackActivity implements
 		return gv;
 	}
 
+	@SuppressLint("ClickableViewAccessibility")
 	private void initView() {
 		// TODO Auto-generated method stub
 		imm = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
@@ -397,6 +398,7 @@ public class ChatActivity extends SwipeBackActivity implements
 	// 防止乱pageview乱滚动
 	private OnTouchListener forbidenScroll() {
 		return new OnTouchListener() {
+			@SuppressLint("ClickableViewAccessibility")
 			public boolean onTouch(View v, MotionEvent event) {
 				if (event.getAction() == MotionEvent.ACTION_MOVE) {
 					return true;
