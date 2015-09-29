@@ -7,7 +7,4 @@ public class Test {
 		return test;
 	}
 
-	public void setTest(String test) {
-		this.test = test;
-	}
 }
