@@ -1,0 +1,217 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.baby"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/theme_baby" >
+
+    <TextView
+        android:id="@+id/tv_takeVideo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@android:id/widget_frame"
+        android:layout_margin="15dp"
+        android:background="@drawable/round"
+        android:drawableLeft="@drawable/drawcamera"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:text="拍摄视频"
+        android:textColor="#006211"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_watchVideo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/tv_takeVideo"
+        android:layout_margin="15dp"
+        android:background="@drawable/round"
+        android:clickable="true"
+        android:drawableLeft="@drawable/draweyes"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:text="查看视频"
+        android:textColor="#006211"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_watchVideo"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/round"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp" >
+
+        <TextView
+            android:id="@+id/tv_borning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_below="@+id/tv_height"
+            android:paddingLeft="10dp"
+            android:text="宝宝的成长记录:"
+            android:textColor="#006211"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_born"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/tv_borning"
+            android:layout_marginTop="40dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="宝 宝 出 生 了 ："
+            android:textColor="#006211"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_born"
+            android:layout_toRightOf="@id/tv_born"
+            android:background="@drawable/touch_text"
+            android:clickable="true"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="30天啦"
+            android:textColor="#006211"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/tv_borning"
+            android:layout_below="@id/tv_born"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="宝 宝 的 体 重 ："
+            android:textColor="#006211"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_weight"
+            android:layout_toRightOf="@id/tv_weight"
+            android:background="@drawable/touch_text"
+            android:clickable="true"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="10kg哟"
+            android:textColor="#006211"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/tv_borning"
+            android:layout_below="@id/tv_weight"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="宝 宝 的 身 高 ："
+            android:textColor="#006211"
+            android:textSize="18sp" />
+
+        <TextView android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+            android:id="@+id/tv_pang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_height"
+            android:layout_toRightOf="@id/tv_height"
+            android:background="@drawable/touch_text"
+            android:clickable="true"
+            android:text="50cm哟"
+            android:textColor="#006211"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/touch_text"
+        android:clickable="true"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:text="社区动态"
+        android:textColor="#006211"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/touch_text"
+        android:clickable="true"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:text="历史记录"
+        android:textColor="#006211"
+        android:textSize="18dp" />
+
+    <com.hqu.baby.customview.RoundAngleImageView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/headbg"
+        app:roundHeight="5dp"
+        app:roundWidth="5dp" />
+
+    <RelativeLayout
+        android:id="@android:id/widget_frame"
+        android:layout_width="match_parent"
+        android:layout_height="160dp" >
+
+        <com.hqu.baby.customview.CircleImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/baby" />
+
+        <TextView
+            android:id="@+id/tv_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_photo"
+            android:text="Oh Baby"
+            android:textColor="#0f0e16"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

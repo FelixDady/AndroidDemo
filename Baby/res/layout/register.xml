@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.baby"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/theme_baby" >
+
+    <com.hqu.baby.customview.RoundAngleImageView
+        android:id="@android:id/icon"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/headbg"
+        app:roundHeight="5dp"
+        app:roundWidth="5dp" />
+
+    <EditText
+        android:id="@+id/et_newuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@android:id/icon"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="40dp"
+        android:hint="账号注册（6-12位纯数字）"
+        android:singleLine="true"
+        android:textColor="#005b11"
+        android:textColorHint="#aa005b11"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_newpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/et_newuser"
+        android:layout_alignRight="@id/et_newuser"
+        android:layout_below="@id/et_newuser"
+        android:layout_marginTop="15dp"
+        android:hint="请输入密码"
+        android:password="true"
+        android:singleLine="true"
+        android:textSize="20sp"
+        android:textColor="#00470c"
+        android:textColorHint="#aa00470c" />
+
+    <EditText
+        android:id="@+id/et_confirmpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/et_newpassword"
+        android:layout_alignRight="@id/et_newpassword"
+        android:layout_below="@id/et_newpassword"
+        android:layout_marginTop="15dp"
+        android:hint="确认密码"
+        android:password="true"
+        android:singleLine="true"
+        android:textSize="20sp"
+        android:textColor="#002607" 
+        android:textColorHint="#aa002607"/>
+
+    <Button
+        android:onClick="register"
+        android:id="@+id/bt_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_confirmpassword"
+        android:layout_alignRight="@+id/et_confirmpassword"
+        android:layout_below="@+id/et_confirmpassword"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/touch_normal"
+        android:textColor="#001303"
+        android:textColorHint="#aa001303"
+        android:hint="注册 "
+        android:textSize="20sp" />
+
+</RelativeLayout>

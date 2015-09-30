@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/theme_baby"
+    android:paddingBottom="-50dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp" >
+
+    <EditText
+        android:id="@+id/et_passwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:text="amwjatvnh"
+        android:textColor="#00490d" />
+
+    <EditText
+        android:id="@+id/et_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/et_passwd"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="20dp"
+        android:hint="user"
+        android:singleLine="true"
+        android:text="736232402"
+        android:textColor="#005d11" />
+
+    <com.hqu.baby.customview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/et_user"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/baby" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/et_passwd"
+        android:layout_below="@id/et_passwd"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/touch_normal"
+        android:gravity="center"
+        android:text="登    陆"
+        android:textColor="#00390b"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/touch_text"
+        android:onClick="forgetPasswd"
+        android:clickable="true"
+        android:padding="15dp"
+        android:text="忘记密码"
+        android:textColor="#00af56"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/touch_text"
+        android:onClick="register"
+        android:clickable="true"
+        android:padding="15dp"
+        android:text="注册账号"
+        android:textColor="#00af56"
+        android:textSize="18sp" />
+
+</RelativeLayout>
