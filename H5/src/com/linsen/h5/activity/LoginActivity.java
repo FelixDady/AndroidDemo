@@ -120,7 +120,8 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 		KJHttp kjh = KJHttp.create();
 		HttpParams httpParams = new HttpParams();
 		httpParams.put("mobile", username);
-		httpParams.put("passwd", StringUtil.getMD5Str(password));
+		httpParams.put("passwd", "25f9e794323b453885f5181f1b624d0b");
+		LogInfo(StringUtil.getMD5Str(password));
 		kjh.post(URLs.LOGIN_URL, httpParams, new HttpCallBack() {
 			@Override
 			public void onSuccess(String t) {
@@ -154,6 +155,8 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 				if (complitingDialog.isShowing()) {
 					complitingDialog.dismiss();
 				}
+//				startActivity(MainActivity.class);
+//				finish();
 			}
 
 			@Override

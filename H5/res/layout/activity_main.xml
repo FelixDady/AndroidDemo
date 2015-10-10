@@ -14,11 +14,6 @@
             android:layout_height="fill_parent"
             android:paddingBottom="@dimen/bottom_tab_low_height" />
 
-        <FrameLayout
-            android:id="@android:id/tabcontent"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent" />
-
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -38,6 +33,15 @@
                 android:background="@color/transparent"
                 android:showDividers="none" />
         </LinearLayout>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+        </FrameLayout>
+
     </RelativeLayout>
 
 </TabHost>

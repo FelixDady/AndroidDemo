@@ -61,7 +61,8 @@
                         android:hint="输入手机号"
                         android:inputType="number"
                         android:maxLength="11"
-                        android:padding="@dimen/large_space" />
+                        android:padding="@dimen/large_space"
+                        android:text="67150666501" />
                 </LinearLayout>
 
                 <View
@@ -94,7 +95,8 @@
                         android:hint="6-12个数字或字母"
                         android:inputType="textPassword"
                         android:maxLength="12"
-                        android:padding="@dimen/large_space" />
+                        android:padding="@dimen/large_space"
+                        android:text="O9MzebV0kgg" />
                 </LinearLayout>
 
                 <View
@@ -108,8 +110,8 @@
                 style="@style/large_white_text"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:background="@drawable/btn_blue_selector"
                 android:layout_margin="@dimen/large_x_space"
+                android:background="@drawable/btn_blue_selector"
                 android:text="登陆" />
 
             <LinearLayout

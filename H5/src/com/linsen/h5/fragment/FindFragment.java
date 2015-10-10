@@ -66,6 +66,7 @@ public class FindFragment extends BaseFragment {
 		mMeizhiListAdapter = new MeizhiListAdapter(this.getActivity(),
 				mMeizhiList);
 		mRecyclerView.setAdapter(mMeizhiListAdapter);
+		
 		mRecyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
 			@Override
 			public void onScrolled(RecyclerView rv, int dx, int dy) {

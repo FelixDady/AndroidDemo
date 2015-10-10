@@ -9,6 +9,8 @@ import com.linsen.h5.manager.PreferenceManager;
 import com.linsen.h5.utils.IntentUtil;
 
 public abstract class BaseActivity extends Activity {
+	private final String NAME=this.getClass().getName();
+	private final String TAG=NAME.substring(NAME.lastIndexOf(".")+1);
 	protected BaseApplication mApplication;
 	protected PreferenceManager pm;
 
@@ -40,6 +42,32 @@ public abstract class BaseActivity extends Activity {
 	/** 初始化事件 **/
 	protected abstract void initEvents();
 
+	
+	
+	/** 我的输出日志 **/
+	protected void LogInfo(String msg) {
+		showLogInfo(TAG,msg);
+	}
+	protected void LogWarning(String msg) {
+		showLogWarning(TAG,msg);
+	}
+	protected void LogDebug(String msg) {
+		showLogDebug(TAG,msg);
+	}
+	protected void LogError(String msg) {
+		showLogError(TAG,msg);
+	}
+	
+	/** wraning输出Log日志 **/
+	protected void showLogWarning(String tag, String msg) {
+		Log.w(tag, msg);
+	}
+	
+	/** Info输出Log日志 **/
+	protected void showLogInfo(String tag, String msg) {
+		Log.i(tag, msg);
+	}
+	
 	/** Debug输出Log日志 **/
 	protected void showLogDebug(String tag, String msg) {
 		Log.d(tag, msg);
